@@ -20,7 +20,8 @@ import {
   TrendingUp, 
   Flame, 
   ChevronRight,
-  Instagram
+  Instagram,
+  MapPin
 } from 'lucide-react';
 import { MiniDashboardPreview } from './MiniDashboardPreview';
 import { RotatingTestimonials } from './RotatingTestimonials';
@@ -28,6 +29,7 @@ import { ContactUsSection } from './ContactUsSection';
 import { SERVICES, WORK_ITEMS, FAQS } from '../data/mockData';
 import { Logo } from './Logo';
 import { PageId } from './Navbar';
+
 
 interface SectionProps {
   onOpenBooking: () => void;
@@ -535,9 +537,27 @@ export const Footer: React.FC<SectionProps> = ({ onOpenBooking, onNavigate }) =>
               <a href="mailto:hello@corezeva.com" className="p-2 rounded-lg bg-slate-100 dark:bg-white/5 hover:text-[#EA580C] transition-colors" aria-label="Email">
                 <Mail className="w-4 h-4" />
               </a>
-              <a href="https://instagram.com/corezeva" target="_blank" rel="noopener noreferrer" className="p-2 rounded-lg bg-slate-100 dark:bg-white/5 hover:text-[#EA580C] transition-colors" aria-label="Instagram">
-                <Instagram className="w-4 h-4" />
-              </a>
+              {/* Instagram */}
+<a 
+  href="https://instagram.com/corezevaofficial" 
+  target="_blank" 
+  rel="noopener noreferrer" 
+  className="p-2 rounded-lg bg-slate-100 dark:bg-white/5 hover:text-[#EA580C] transition-colors" 
+  aria-label="Corezeva on Instagram"
+>
+  <Instagram className="w-4 h-4" />
+</a>
+
+{/* Google Reviews / Maps */}
+<a 
+  href="https://g.page/r/CVwm25hcD9uwECE/review" 
+  target="_blank" 
+  rel="noopener noreferrer" 
+  className="p-2 rounded-lg bg-slate-100 dark:bg-white/5 hover:text-[#EA580C] transition-colors" 
+  aria-label="Corezeva on Google Maps"
+>
+  <MapPin className="w-4 h-4" />
+</a>
               
               
             </div>
